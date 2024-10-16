@@ -6,15 +6,15 @@ This is a full stack bank accounts application that allows users to manage bank 
 ## Technologies
 
 ### Backend:
-- **Django**: 4.x.x
-- **Django Rest Framework**: 3.x.x
+- **Django**: 5.0.6
+- **Django Rest Framework**: 3.15.1
 - **SQLite3**: Database for local development
 
 ### Frontend:
-- **Vite**: 4.x.x (Frontend tooling)
-- **React JS**: 18.x.x
-- **Bootstrap**: 5.x.x (For responsive design)
-- **Axios**: 1.x.x (For making API calls)
+- **Vite**: 5.2.0 (Frontend tooling)
+- **React JS**: 18.2.0
+- **Tailwind CSS**: 3.4.3 (For responsive design)
+- **Axios**: 1.6.8 (For making API calls)
 
 ## Features
 - **Import CSV**: Upload a CSV file containing bank account details (e.g., account number, balance).
