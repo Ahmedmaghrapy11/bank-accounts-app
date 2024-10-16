@@ -1,42 +1,80 @@
-# It took about 4 hours to complete this full-stack project...
+# Bank Accounts App
 
-Installation:
+## Introduction
+This is a full stack bank accounts application that allows users to manage bank accounts. Users can import bank accounts from a CSV file and transfer money from one account to another. The backend is built using Django Rest Framework with SQLite3 as the database, and the frontend is developed with Vite, React JS, and styled using Bootstrap. The app communicates between the frontend and backend using Axios for API calls.
 
-1. Clone the repository:
-# git clone https://github.com/Ahmedmaghrapy11/bank-accounts-app
+## Technologies
 
-2. Navigate to the bank-accounts-frontend directory:
-# cd bank-accounts-frontend
+### Backend:
+- **Django**: 4.x.x
+- **Django Rest Framework**: 3.x.x
+- **SQLite3**: Database for local development
 
-3. Install dependencies:
-# npm install
+### Frontend:
+- **Vite**: 4.x.x (Frontend tooling)
+- **React JS**: 18.x.x
+- **Bootstrap**: 5.x.x (For responsive design)
+- **Axios**: 1.x.x (For making API calls)
 
-4. Run the development server:
-# npm run dev
+## Features
+- **Import CSV**: Upload a CSV file containing bank account details (e.g., account number, balance).
+- **Account Listing**: View all bank accounts and their details.
+- **Transfer Money**: Transfer funds between accounts using the frontend, which communicates with the backend via Axios API calls.
+- **Error Handling**: Displays validation errors for invalid operations such as insufficient funds or incorrect account details.
+- **Responsive UI**: The UI is responsive and styled using Bootstrap.
 
-5. Open your browser and visit http://localhost:5173/ to view the application.
+## Setup
 
-6. Navigate to backend dir:
-# cd..
-# cd BankAccountsProject
+### Backend (Django Rest Framework):
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Ahmedmaghrapy11/bank-accounts-app.git
+   cd bank-accounts-app
+   ```
 
-7. Create a virtual environment (optional but recommended):
-# virtualenv venv
+2. **Create a virtual environment**:
+   ```bash
+   python -m venv venv
+   ```
+   
+3. **Activate the virtual environment**:
+  - For windows
+     ```bash
+     venv\Scripts\activate
+     ```
+  - For macOS/Linux
+      ```bash
+       venv\Scripts\activate
+      ```
 
-8. Activate the virtual environment:
-# venv\Scripts\activate
+4. **Install backend dependencies**:
+   ```bash
+     pip install -r requirements.txt
+   ```
+   
+5. **Run migrations**:
+   ```bash
+     python manage.py migrate
+   ```
 
-9. Install dependencies:
-# pip install -r requirements.txt
+6. **Start the Django server**:
+   ```bash
+     python manage.py runserver
+   ```
 
-10. Run migrations:
-# python manage.py migrate
+### Frontend (Vite + React JS):
 
-11. Start the development server:
-# python manage.py runserver
+1. **Navigate to the frontend directory**:
+   ```bash
+     cd frontend
+   ```
+   
+2. **Install frontend dependencies**:
+   ```bash
+     npm install
+   ```
 
-API Endpoints:
-1. POST /api/bank-accounts/upload-csv-file/: Upload CSV file to add bank accounts.
-2. GET /api/bank-accounts/: List all bank accounts.
-3. POST /api/bank-accounts/transfer/: Transfer funds between accounts.
-4. GET /api/bank-accounts/details/<uuid:pk>/: View details of individual bank accounts.
+3. **Start the Vite development server**:
+   ```bash
+     npm run dev
+   ```
