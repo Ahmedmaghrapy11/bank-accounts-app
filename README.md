@@ -29,7 +29,7 @@ This is a full stack bank accounts application that allows users to manage bank 
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/Ahmedmaghrapy11/bank-accounts-app.git
-   cd bank-accounts-app
+   cd BankAccountsProject
    ```
 
 2. **Create a virtual environment**:
