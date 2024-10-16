@@ -66,7 +66,7 @@ This is a full stack bank accounts application that allows users to manage bank 
 
 1. **Navigate to the frontend directory**:
    ```bash
-     cd frontend
+     cd bank-accounts-frontend
    ```
    
 2. **Install frontend dependencies**:
